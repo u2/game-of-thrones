@@ -48,7 +48,7 @@ http://ethfans.org/rubyu2
 
 ## 项目地址
 
-[https://github.com/u2/u2.github.io/tree/master/game-of-thrones](https://github.com/u2/u2.github.io/tree/master/game-of-thrones)
+[https://github.com/u2/game-of-thrones](https://github.com/u2/game-of-thrones)
 
 欢迎大家对项目提出意见和建议，让这个游戏更好玩。
 
