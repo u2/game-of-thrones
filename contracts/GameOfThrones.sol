@@ -4,6 +4,8 @@ contract GameOfThrones {
     address public jester;
     // Record the last collection time
     uint public lastCollection;
+    // Record the last fell time
+    uint public lastFell;
     // Record king life
     uint public onThrone;
     uint public kingCost;
@@ -36,6 +38,7 @@ contract GameOfThrones {
         trueGods = msg.sender;
         madKing = msg.sender;
         jester = msg.sender;
+        lastFell = block.timestamp;
         lastCollection = block.timestamp;
         onThrone = block.timestamp;
         kingCost = 1 ether;
@@ -82,6 +85,7 @@ contract GameOfThrones {
             // Define the new Castle
             jester = msg.sender;
 
+            lastFell = block.timestamp;
             citizensAddresses.push(msg.sender);
             citizensAmounts.push(amount * 110 / 100);
             totalCitizens += 1;
@@ -92,8 +96,13 @@ contract GameOfThrones {
 
             round += 1;
         } else {
-            citizensAddresses.push(msg.sender);
-            citizensAmounts.push(amount * 110 / 100);
+            if (lastFell + TWENTY_FOUR_HOURS * 2 >= block.timestamp) {
+                citizensAddresses.push(msg.sender);
+                citizensAmounts.push(amount * 130 / 100);
+            } else {
+                citizensAddresses.push(msg.sender);
+                citizensAmounts.push(amount * 110 / 100);
+            }
             totalCitizens += 1;
             investInTheSystem(amount);
 
