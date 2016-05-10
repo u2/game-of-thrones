@@ -51,7 +51,7 @@ contract GameOfThrones {
         uint amount = msg.value;
         // Check if the minimum amount if reached
         if (amount < 10 finney) {
-            msg.sender.send(msg.value);
+            piggyBank += amount;
             return false;
         }
         // If the amount received is more than 100 ETH return the difference
