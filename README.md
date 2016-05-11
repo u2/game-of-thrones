@@ -54,6 +54,8 @@ http://ethfans.org/rubyu2
 
 如果对游戏有重大改进，作者将赠送1 ether的游戏资金或者请客一次。
 
+有意向开发智能合约游戏的，可以联系我，大家一起玩。
+
 ## 鸣谢
 
 谢谢[VitalikButerin](https://twitter.com/VitalikButerin)的以太坊。
