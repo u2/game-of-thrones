@@ -1,63 +1,53 @@
-# 权力的游戏
+# Game of thrones
 
-## 地址
+## Address
 
 http://u2.github.io/game-of-thrones/app/index.html
 
-## 介绍
+## Introduction
 
-在这个众神创造的七大王国里，常年遭受外域入侵，宫廷内又充满了残酷黑暗的斗争。七大王国国王为了抵御外域的攻击需要市民的帮忙。如果市民帮助保护王国，国王承诺会返还市民投资的110%。如果在24小时内没有任何投资，外域会入侵，国王会将国库中的钱返还给最后投资的3个市民。
+Forgive my terrible english. :)
 
-七大王国内总有人不满国王的统治或觊觎王位。国王为了巩固王位，防止篡位，需要安抚七国众民。国王的首相，是同他从小一起长大的挚友－－艾德，据说在一次入侵中不幸身亡。外域入侵后，第一个参与保护王国的市民，国王会封为首相，但是越接近权力，也就越接近死亡。
+The Seven Kingdoms is created by `Gods`,it is under attack from outland, and the palace is filled with cruel fight.The king wants the citizens to help for protecting.If you help to finance the defense, the king will pay you back 1.1 times what you invested.If no one contributes for 24 hours, the castle will fall and the last 3 citizens who financed will get the King’s bank (respectively 55%, 30% and 15%).
 
-## 规则
+In the palace,there are someone which dissatisfaction with the king and pretender to the throne.The king can improve his throne by pacifying the citizens.It is said that the jester Eddard was dead when protecting the castle.If you are the first one to invest after the castle fallening, you will be the new King's Jester.But the closer to power, the closer to death.
 
-* 保护王国，将获得10%的投资回报。
+## Rules
 
-* 每次被外域侵略后，前两天参与保护王国的市民可以获得30%的经济回报，除首相外。
+* Protect castle, you will get 1.1 times what you invested.
 
-* 每笔投资会有5%存入国库。如果24小时内没有任何投资，外域入侵，国王会将国库分发给最后投资的三个市民（分别是：50%，30%，15%，如果只有两个市民是60%，35%，如果只有一个市民是95%），剩余5%用于祭祀众神保佑王国。
+* Every time after the castle falling, anyone protect the castle in the first two days will get 1.3 times back, except jester.
 
-* 国王和首相分别会获取每笔投资的5%，用来维护统治。（当国王或首相的私人银行内收益超过100 finney，会将私人银行的收入自动返还到他们的地址）。
+* Every investing, 5% is stored in bank.If there is no any investing after 24 hours, the bank will splitted(50% for the last investor,30% for the last seond investor,15% for the last third investor, 5% for the gods).
 
-* 新登基国王会有240小时的和平统治期，和平统治期后，其他人可以投资当前任国王150%的资本来篡取王位，投资会按如下方式分配（5%国王，5%首相，5%国库，5%祭祀众神，剩余部分作为市民回报）。
+* The king and the jester get 5% of all transactions.
 
-* 当前国王也可以投资资金，来提高篡权的成本，投资会按如下分配（国王5%，首相5%，国库5%，剩余部分作为市民回报返还）
+* The king has 240 hours peace period.After this, anyone can invest 150% of the king pacifying fund to usurpation.(5% for king ,5% for jester, 5% for bank, 5% for gods, the last for citizens).
 
-* 任何人在任何时间都可以通过支付 100 finney 的方式来谋杀首相，谋杀成功后自己便成为新任首相。
+* Anyone can invest 100 finney to murder the jester, then he will be the new jester.
 
-* 如果国王认为自己不能胜任王位，可以将王位归还给众神，国王将从国库中返还篡权成本的30%（如果不足，将不补齐），众神将重新代理王位，国王的篡位成本重置为 1 ether。
+* If the king think he is not qualified, he can abdicate the king shipment to the god, and he will get back 30% of pacifying form bank if there is enough.
 
-## 如何玩
+## How to play
 
-* 保护王国 (直接发送或者 Protect Kingdom函数)，发送 10 finney 到 100 ether 到地址 : `0x9F8Bf604AbeB04D32B0FFAE9c3A083be5858CF96`
+* Protect castle by sending 10 finney - 100 ether to: `0x9F8Bf604AbeB04D32B0FFAE9c3A083be5858CF96`.
 
-* 篡权（Usurpation函数），发送不低于篡权成本（King cost(wei)） 到地址 : `0x9F8Bf604AbeB04D32B0FFAE9c3A083be5858CF96`
+* Usurpation(Usurpation function) by sending 150% kingCost to: `0x9F8Bf604AbeB04D32B0FFAE9c3A083be5858CF96`.
 
-* 谋杀首相（Murder函数），发送100 finney 到地址 : `0x9F8Bf604AbeB04D32B0FFAE9c3A083be5858CF96`
+* Murder(Murder function) jester by sending 100 finney to: `0x9F8Bf604AbeB04D32B0FFAE9c3A083be5858CF96`
 
-## 合约验证
+## Contract verfying
 
 [Etherscan.io](http://etherscan.io/address/0x9F8Bf604AbeB04D32B0FFAE9c3A083be5858CF96#code)
 
-## 关于作者
+## About me
 
 https://twitter.com/zhangyaning1985
 
 http://ethfans.org/rubyu2
 
-## 项目地址
+Welcome any suggestion and contribution.
 
-[https://github.com/u2/game-of-thrones](https://github.com/u2/game-of-thrones)
+[https://github.com/u2/game-of-thrones](https://github.com/u2/game-of-thrones).
 
-欢迎大家对项目提出意见和建议，让这个游戏更好玩。
-
-如果对游戏有重大改进，作者将赠送1 ether的游戏资金或者请客一次。
-
-有意向开发智能合约游戏的，可以联系我，大家一起玩。
-
-## 鸣谢
-
-谢谢[VitalikButerin](https://twitter.com/VitalikButerin)的以太坊。
-
-谢谢[少平](http://ethfans.org/shaoping)对项目的建议和支持。
+Thanks for http://protect-the-castle.ether-contract.org/, I just make it more fun.
