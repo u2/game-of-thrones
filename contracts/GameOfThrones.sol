@@ -29,9 +29,9 @@ contract GameOfThrones {
     uint public amountAlreadyPaidBack;
     // Amount invested in this round
     uint public amountInvested;
-
-    uint constant TWENTY_FOUR_HOURS = 60 * 60 * 24;
-    uint constant PEACE_PERIOD = 60 * 60 * 240;
+    
+    uint constant TWENTY_FOUR_HOURS = 1 days;
+    uint constant PEACE_PERIOD = 10 days;
 
     function GameOfThrones() {
         // Define the first castle
